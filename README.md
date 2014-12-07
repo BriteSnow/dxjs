@@ -1,7 +1,10 @@
 ## Minimalistic and Extensible Data >< DOM Binding library
+
 - dx.js is a minimalistic and extensible library to allow to push and pull data into and from a DOM structure. 
 - It uses the css class "dx" to mark the elements that must be "pushed/pulled" (class name is one of the fastest way to query a DOM structure, so, we use this as a first filter).
-- You use css class name, data-dx, or input name attributes to specify the property path.
+- You can define your *property path* as *data-dx="job.title"* or in the class name as *class="dx dx-job-title"* (*dx-* prefixed and *-* rather than *.* when in class name), or in the name attribute of an input (*name="job.title"*)
+
+*(Still experimental: While we use this library in some of our production code, the API and functionalities might change overtime. Obviously, feel free to use it as is, or make it your own. Feedback always welcome.)*
 
 So, if you have an HTML structure (already in your DOM) like:
 
