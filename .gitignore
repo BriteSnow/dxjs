@@ -1,0 +1,10 @@
+# Ignore mac info files
+.DS_Store
+
+# ignore .py (we use some python script to build)
+.py
+
+
+# Ignore Sublime Text files
+*.sublime-project
+*.sublime-workspace
