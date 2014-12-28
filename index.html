@@ -44,7 +44,8 @@
 				premium: true,
 				job: {
 					title: "vp"
-				}
+				}, 
+				note: "Specialized in HTML5 and Java8"
 			}
 			$("body").dxPush(data);
 
@@ -91,6 +92,7 @@
 				<option value="1997">1997</option>
 				<option value="1998">1998</option>
 			</select>
+			<textarea name="note" class="dx"></textarea>
 		</div>
 
 		<script>
@@ -99,7 +101,8 @@
 			var data = {
 				contact: {
 					name: "John Smith",
-					since: 1997
+					since: 1997,
+					note: "Specialized in HTML5 and Java8"
 				}
 			}				
 			console.log("test dx.val getValue", dx.val(data,"contact.name"));
